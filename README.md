@@ -31,9 +31,10 @@ In these projects, every sound was produced on the developer's own computer. No 
 service and no per-clip fees were involved.
 
 - **Narration (voice-over):**
-  - Generated with an open-source multilingual text-to-speech model (Chatterbox Multilingual)
-    that runs from a local AI-models folder on Apple Silicon, fully offline.
-  - The model speaks Turkish and English from the same lesson text. The kids' chess app ships
+  - Generated with two open-source multilingual text-to-speech models, **Chatterbox
+    Multilingual** and **Qwen3-TTS**. Both run from a local AI-models folder on Apple Silicon,
+    fully offline.
+  - Both models speak Turkish and English from the same lesson text. The kids' chess app ships
     **148 Turkish narration clips** for its first world. English uses the same pipeline and is
     switched on per language.
   - Each line has a fixed seed, so the same text gives the same clip. Clips are checked

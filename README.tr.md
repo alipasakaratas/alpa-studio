@@ -27,9 +27,10 @@ Bu projelerde tüm sesler geliştiricinin kendi bilgisayarında üretildi. Bulut
 kullanılmadı, klip başına ücret ödenmedi.
 
 - **Anlatım (seslendirme):**
-  - Açık kaynaklı, çok dilli bir metinden sese modeliyle (Chatterbox Multilingual) üretildi.
-    Model, yerel AI modelleri klasöründen Apple Silicon üzerinde tamamen çevrimdışı çalışır.
-  - Model aynı ders metnini Türkçe ve İngilizce seslendirir. Çocuk satranç uygulaması ilk
+  - Açık kaynaklı, çok dilli iki metinden sese modeliyle, **Chatterbox Multilingual** ve
+    **Qwen3-TTS** ile üretildi. İki model de yerel AI modelleri klasöründen Apple Silicon
+    üzerinde tamamen çevrimdışı çalışır.
+  - İki model de aynı ders metnini Türkçe ve İngilizce seslendirir. Çocuk satranç uygulaması ilk
     dünyası için **148 Türkçe anlatım klibiyle** geliyor. İngilizce aynı hattı kullanır ve dil
     bazında açılır.
   - Her satırın sabit bir tohumu (seed) vardır, bu yüzden aynı metin aynı klibi verir. Klipler
