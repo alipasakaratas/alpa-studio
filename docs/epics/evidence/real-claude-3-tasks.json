@@ -1,0 +1,46 @@
+{
+  "stop_reason": "no_eligible",
+  "exit_code": 0,
+  "runs": [
+    {
+      "task_id": "TASK-CEC0A234",
+      "attempt": 1,
+      "exit_code": 0,
+      "session_id": "355dfcc9-af77-40ba-91e4-88f873f757f6",
+      "duration_s": 7.9,
+      "log": ".alpa-studio/runs/TASK-CEC0A234-1.log",
+      "subtype": "success",
+      "cost_usd": 0.00642715,
+      "kind": "recorded",
+      "status": "done",
+      "summary": "notes/task1.txt was created in the project root; its only content is 'task 1'."
+    },
+    {
+      "task_id": "TASK-282575D4",
+      "attempt": 1,
+      "exit_code": 0,
+      "session_id": "2096a2a5-17e4-4e3c-a1c9-39159cd29c42",
+      "duration_s": 8.4,
+      "log": ".alpa-studio/runs/TASK-282575D4-1.log",
+      "subtype": "success",
+      "cost_usd": 0.00596478,
+      "kind": "recorded",
+      "status": "done",
+      "summary": "notes/task2.txt was created in the project root; its only content is 'task 2'."
+    },
+    {
+      "task_id": "TASK-869B147D",
+      "attempt": 1,
+      "exit_code": 0,
+      "session_id": "9a78a14f-aa7c-4101-9589-0828bbbc758e",
+      "duration_s": 11.2,
+      "log": ".alpa-studio/runs/TASK-869B147D-1.log",
+      "subtype": "success",
+      "cost_usd": 0.00709531,
+      "kind": "recorded",
+      "status": "done",
+      "summary": "notes/task3.txt was created in the project root; its only content is 'task 3'."
+    }
+  ],
+  "pending": "queue empty"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "example",
+  "name": "Example Puzzle Game",
+  "summary": "Generic portrait Unity iOS/Android puzzle game profile; copy it to make your own",
+  "certification_order": 1,
+  "required_roles": ["studio-director", "game-director", "unity-developer", "art-director", "visual-qa", "device-lab", "privacy-security"],
+  "required_evidence_types": ["competitor", "video", "review"],
+  "required_scenes": ["boot", "home", "gameplay", "result", "settings"],
+  "notes": "Neutral example. Existing project state is audited before installation; no game concept, art or mechanics are assumed."
+}

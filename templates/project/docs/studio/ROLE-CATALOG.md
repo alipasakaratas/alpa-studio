@@ -1,0 +1,50 @@
+# Role catalog
+
+Roles are selected per task; loading all roles is discouraged.
+
+- `studio-director` (`opus`) — Selects only the roles needed and coordinates the studio.
+- `producer` (`sonnet`) — Plans milestones, dependencies, risks, and owner gates.
+- `product-manager` (`opus`) — Defines audience, product outcomes, scope, and metrics.
+- `game-director` (`opus`) — Owns coherent game vision inside approved decisions.
+- `game-designer` (`opus`) — Designs rules, loops, progression, and player feedback.
+- `systems-designer` (`opus`) — Designs interacting game systems and balance models.
+- `level-designer` (`opus`) — Builds and validates levels, pacing, and difficulty.
+- `economy-designer` (`opus`) — Designs ethical currencies, rewards, and sinks.
+- `narrative-designer` (`opus`) — Designs story, characters, dialogue, and world logic.
+- `technical-director` (`opus`) — Owns technical quality, budgets, and integration decisions.
+- `unity-architect` (`opus`) — Designs maintainable Unity architecture and boundaries.
+- `unity-developer` (`opus`) — Implements tested Unity gameplay and presentation code.
+- `editor-tools-engineer` (`opus`) — Builds safe Unity Editor automation and validation tools.
+- `build-engineer` (`opus`) — Owns deterministic local builds and CI-ready build scripts.
+- `ios-engineer` (`sonnet`) — Handles iOS build, signing diagnostics, and device constraints.
+- `android-engineer` (`sonnet`) — Handles Android builds, emulators, devices, and store constraints.
+- `backend-engineer` (`opus`) — Designs optional online services with offline-safe fallbacks.
+- `data-analyst` (`sonnet`) — Defines event schemas, metrics, experiments, and truthful analyses.
+- `art-director` (`opus`) — Owns the approved Art Bible and cross-asset consistency.
+- `concept-artist` (`opus`) — Creates three distinct original visual concept directions.
+- `ui-ux-designer` (`opus`) — Designs readable mobile flows, layouts, and interactions.
+- `2d-artist` (`opus`) — Produces 2D asset specifications within the approved style.
+- `3d-artist` (`opus`) — Produces topology, material, rig, and export specifications.
+- `technical-artist` (`opus`) — Bridges art and Unity under performance budgets.
+- `animator` (`opus`) — Designs readable, responsive animation systems and clips.
+- `vfx-artist` (`opus`) — Designs performant mobile effects and motion-reduction variants.
+- `audio-director` (`opus`) — Owns sonic identity, budgets, and licensing evidence.
+- `composer` (`opus`) — Specifies original adaptive music and loop requirements.
+- `sound-designer` (`opus`) — Specifies original feedback, ambience, and mix behavior.
+- `localization` (`sonnet`) — Owns internationalization, translation quality, and text fit.
+- `accessibility` (`opus`) — Audits motor, visual, hearing, cognitive, and motion access.
+- `child-safety` (`sonnet`) — Audits age-appropriate design, parental gates, and dark patterns.
+- `privacy-security` (`sonnet`) — Audits data minimization, secrets, SDKs, and attack surfaces.
+- `copyright` (`sonnet`) — Tracks provenance, licenses, similarity, and rights risks.
+- `qa-lead` (`sonnet`) — Coordinates independent test stages and evidence completeness.
+- `gameplay-qa` (`sonnet`) — Tests rules, regressions, edge cases, and deterministic behavior.
+- `visual-qa` (`opus`) — Independently scores in-engine visuals against approved references.
+- `performance-qa` (`sonnet`) — Profiles frame time, memory, loading, thermal, and battery risk.
+- `device-lab` (`sonnet`) — Runs truthful simulator, emulator, and physical-device matrices.
+- `research-analyst` (`sonnet`) — Builds source-backed market and design research.
+- `competitor-analyst` (`sonnet`) — Compares current competitors from primary store evidence.
+- `review-miner` (`sonnet`) — Extracts recurring player needs from cited real reviews.
+- `monetization-auditor` (`sonnet`) — Audits ethical ads, IAP, pricing, and owner approval gates.
+- `release-manager` (`sonnet`) — Prepares release evidence but never publishes without approval.
+- `continuity-manager` (`haiku`) — Maintains checkpoints, handoffs, queue state, and session rotation.
+- `resource-manager` (`haiku`) — Schedules model, hardware, disk, and concurrency conservatively.

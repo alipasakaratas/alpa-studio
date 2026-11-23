@@ -1,0 +1,15 @@
+[project]
+name = "alpa-studio"
+version = "0.4.0"
+description = "Local-first Claude Code studio framework for Unity mobile games"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+
+[project.scripts]
+alpa = "alpa_studio.cli:main"
+# Deprecated alias kept for 0.3.x installs; prints a notice and then behaves like `alpa`.
+ags = "alpa_studio.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

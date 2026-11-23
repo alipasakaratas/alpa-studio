@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+STUDIO_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+PYTHONPATH="$STUDIO_ROOT/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m alpa_studio.cli "$@"
+

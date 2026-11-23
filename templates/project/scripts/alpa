@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+PROJECT_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+RUNTIME_ROOT="$PROJECT_ROOT/.alpa-studio/runtime"
+if [ ! -f "$RUNTIME_ROOT/src/alpa_studio/cli.py" ]; then
+  echo "Alpa Studio local runtime is missing. Re-run the reviewed installer update." >&2
+  exit 2
+fi
+ALPA_PROJECT="${ALPA_PROJECT:-${AGS_PROJECT:-$PROJECT_ROOT}}" PYTHONPATH="$RUNTIME_ROOT/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m alpa_studio.cli "$@"

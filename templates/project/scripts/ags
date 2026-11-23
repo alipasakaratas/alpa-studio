@@ -1,0 +1,5 @@
+#!/bin/sh
+# Deprecated alias for scripts/alpa (Alpa Studio 0.4.0 renamed the CLI). Prints a notice, then runs alpa.
+set -eu
+PROJECT_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+ALPA_INVOKED_AS=ags exec "$PROJECT_ROOT/scripts/alpa" "$@"
