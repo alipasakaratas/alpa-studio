@@ -25,6 +25,26 @@ The full numbers, what did not work, the method, and a script to reproduce the m
 your own machine are in [docs/EVIDENCE.md](docs/EVIDENCE.md)
 (`python3 tools/usage_scan.py --split <date>`).
 
+### Audio made on the developer's own machine
+
+In these projects, every sound was produced on the developer's own computer. No cloud voice
+service and no per-clip fees were involved.
+
+- **Narration (voice-over):**
+  - Generated with an open-source multilingual text-to-speech model (Chatterbox Multilingual)
+    that runs from a local AI-models folder on Apple Silicon, fully offline.
+  - The model speaks Turkish and English from the same lesson text. The kids' chess app ships
+    **148 Turkish narration clips** for its first world. English uses the same pipeline and is
+    switched on per language.
+  - Each line has a fixed seed, so the same text gives the same clip. Clips are checked
+    automatically, and a clip whose text has changed is muted until it is regenerated.
+- **Sound effects and music:** synthesised by small Python scripts that use only the standard
+  library. No samples or downloads are involved, and the script, not the WAV file, is the
+  source of truth.
+
+Alpa Studio does not bundle these models or scripts. They live in each game's `Tools/` folder.
+The studio's audio and narrative roles plan the work, and the agents run the local tools.
+
 ## What works now
 
 - Safe installer with mandatory Unity/Git/writability preflight, dry-run by default, conflict skipping, settings-preserving merge, backups, checksums, and project-local state.

@@ -21,6 +21,28 @@ Sürüm: **0.4.0 MVP** · Lisans: Apache-2.0 · Çalışma bağımlılıkları: 
 
 Tüm sayılar, işe yaramayan şeyler, yöntem ve ölçümü kendi makinenizde yeniden üreten script [docs/EVIDENCE.md](docs/EVIDENCE.md) dosyasında (İngilizce). Script'i `python3 tools/usage_scan.py --split <tarih>` ile çalıştırabilirsiniz.
 
+### Geliştiricinin kendi bilgisayarında üretilen sesler
+
+Bu projelerde tüm sesler geliştiricinin kendi bilgisayarında üretildi. Bulut ses servisi
+kullanılmadı, klip başına ücret ödenmedi.
+
+- **Anlatım (seslendirme):**
+  - Açık kaynaklı, çok dilli bir metinden sese modeliyle (Chatterbox Multilingual) üretildi.
+    Model, yerel AI modelleri klasöründen Apple Silicon üzerinde tamamen çevrimdışı çalışır.
+  - Model aynı ders metnini Türkçe ve İngilizce seslendirir. Çocuk satranç uygulaması ilk
+    dünyası için **148 Türkçe anlatım klibiyle** geliyor. İngilizce aynı hattı kullanır ve dil
+    bazında açılır.
+  - Her satırın sabit bir tohumu (seed) vardır, bu yüzden aynı metin aynı klibi verir. Klipler
+    otomatik olarak kontrol edilir; metni değişen bir klip, yeniden üretilene kadar sessize
+    alınır.
+- **Ses efektleri ve müzik:** yalnızca standart kütüphaneyi kullanan küçük Python script'leriyle
+  sentezlenir. Hazır örnek ses ya da indirme kullanılmaz; doğruluk kaynağı WAV dosyası değil,
+  script'tir.
+
+Alpa Studio bu modelleri ve script'leri paketin içinde getirmez. Bunlar her oyunun `Tools/`
+klasöründe durur. Stüdyonun ses ve anlatı rolleri işi planlar, ajanlar da yerel araçları
+çalıştırır.
+
 ## Şu an çalışanlar
 
 - **Güvenli kurulum:**
